@@ -11,7 +11,7 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed; 
     public int index;
-
+    [SerializeField] private DialogueReward reward;
 
 
 
@@ -80,4 +80,6 @@ public class Dialogue : MonoBehaviour
         }
 
     }
+
+
 }
