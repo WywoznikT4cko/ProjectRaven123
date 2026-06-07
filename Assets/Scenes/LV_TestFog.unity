@@ -8026,12 +8026,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961363607}
-  m_LocalRotation: {x: -0.35355335, y: -0.6123724, z: 0.6123726, w: 0.35355324}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1351397070}
+  m_Father: {fileID: 1852347196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8058,7 +8058,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11206,9 +11206,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1921008366}
-    - targetCorrespondingSourceObject: {fileID: 6513916827115202091, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 961363608}
     - targetCorrespondingSourceObject: {fileID: 937590820635081148, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       insertIndex: -1
       addedObject: {fileID: 349482607}
@@ -11217,11 +11214,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 273824892}
   m_SourcePrefab: {fileID: 100100000, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
---- !u!224 &1351397070 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6513916827115202091, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
-  m_PrefabInstance: {fileID: 1351397069}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1360680523
 GameObject:
   m_ObjectHideFlags: 0
@@ -15002,6 +14994,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673ccc16db638bd4fb9e7881052c9c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+--- !u!224 &1852347196 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 241854219011245653, guid: c5a87afe5ec01d04383328ed0fab4ea1, type: 3}
+  m_PrefabInstance: {fileID: 4574932485161953359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1867130009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17282,7 +17279,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 241854219011245653, guid: c5a87afe5ec01d04383328ed0fab4ea1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 961363608}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5a87afe5ec01d04383328ed0fab4ea1, type: 3}
 --- !u!1660057539 &9223372036854775807
