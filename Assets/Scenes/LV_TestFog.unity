@@ -17269,6 +17269,14 @@ PrefabInstance:
       propertyPath: reward
       value: 
       objectReference: {fileID: 28943194}
+    - target: {fileID: 3251218578586679774, guid: c5a87afe5ec01d04383328ed0fab4ea1, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: aaaa
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251218578586679774, guid: c5a87afe5ec01d04383328ed0fab4ea1, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: bbbbb
+      objectReference: {fileID: 0}
     - target: {fileID: 8458490097926703276, guid: c5a87afe5ec01d04383328ed0fab4ea1, type: 3}
       propertyPath: m_Name
       value: Canvas

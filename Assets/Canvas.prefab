@@ -331,7 +331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   textComponent: {fileID: 8215828566545257347}
   lines:
-  - sraka
-  - "Jeba\u0107 \u017Cyd\xF3w"
+  - dsad
+  - dsadsaddsad
   textSpeed: 10
   index: 0
+  reward: {fileID: 0}
