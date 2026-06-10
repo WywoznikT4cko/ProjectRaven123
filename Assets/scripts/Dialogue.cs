@@ -11,8 +11,10 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed; 
     public int index;
+    public bool dialogueEnded;
     [SerializeField] private DialogueReward reward;
-
+    [SerializeField] private bool dEnded = false;
+    
 
 
 
@@ -20,7 +22,10 @@ public class Dialogue : MonoBehaviour
 
     public void StartDialogue()
     {
-        
+        if(dEnded)
+        {
+            return;
+        }
         
     
             dialogueActive = true;
@@ -37,7 +42,7 @@ public class Dialogue : MonoBehaviour
     void Update()
     {
         if (!dialogueActive)
-            return;
+            EndDialogue();
             
         if(Input.GetMouseButtonDown(0))
         {
@@ -76,10 +81,22 @@ public class Dialogue : MonoBehaviour
         else
         {
             dialogueActive = false;
-            gameObject.SetActive(false);
-            reward.GiveReward();
         }
 
+    }
+
+    public void EndDialogue()
+    {
+        if (dialogueActive == false)
+        {
+            reward.GiveReward();
+            dEnded = true;
+            gameObject.SetActive(false);
+
+
+            return;
+
+        }
     }
 
 

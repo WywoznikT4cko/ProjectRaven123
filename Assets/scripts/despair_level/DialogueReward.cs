@@ -10,7 +10,10 @@ public class DialogueReward : MonoBehaviour
     public void GiveReward()
     {
         if (rewardGiven)
+        {
+            redScreenEffect.IncreaseRedness();
             return;
+        }
 
         playerInventory.AddItem();
 
