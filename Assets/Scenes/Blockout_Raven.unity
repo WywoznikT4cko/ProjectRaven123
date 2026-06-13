@@ -16559,6 +16559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   itemCount: 0
+  hasSpecialItem: 0
 --- !u!4 &887671895
 Transform:
   m_ObjectHideFlags: 0
@@ -21768,6 +21769,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteraction
   dialogue: {fileID: 1598594286}
+  successDialogue: {fileID: 0}
+  needItemDialogue: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!54 &1176966923
 Rigidbody:
   m_ObjectHideFlags: 0

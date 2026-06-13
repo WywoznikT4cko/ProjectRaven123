@@ -23,4 +23,25 @@ public class PlayerInventory : MonoBehaviour
             itemCount--;
         }
     }
+
+// Specjalny przedmiot, który gracz może otrzymać
+
+    public bool hasSpecialItem = false;
+
+    public void GiveSpecialItem()
+    {
+        hasSpecialItem = true;
+        Debug.Log("Gracz otrzymał specjalny przedmiot.");
+    }
+
+    public bool GiveSpecialItemToNPC()
+    {
+        if (!hasSpecialItem)
+            return false;
+
+        hasSpecialItem = false;
+
+        Debug.Log("Gracz oddał specjalny przedmiot.");
+        return true;
+    }
 }
