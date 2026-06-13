@@ -8,7 +8,7 @@ public class NPCQuest : MonoBehaviour
     {
         if (playerInventory.hasSpecialItem)
         {
-            playerInventory.RemoveSpecialItem();
+            playerInventory.GiveSpecialItemToNPC();
 
             Debug.Log("NPC otrzymał przedmiot!");
 
