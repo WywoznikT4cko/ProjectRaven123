@@ -9,18 +9,24 @@ public class DialogueReward : MonoBehaviour
 
     public void GiveReward()
     {
+        
         if (rewardGiven)
-        {
-            redScreenEffect.IncreaseRedness();
             return;
-        }
 
-        playerInventory.AddItem();
+        if (!playerInventory.HasItem())
+            return;
+
+        playerInventory.RemoveItem();      //gracz oddaje przedmiot NPC
+        playerInventory.AddItem();        // gracz otrzymuje nagrodę
 
         redScreenEffect.IncreaseRedness();
 
-        rewardGiven = true;
+        rewardGiven = true; 
 
-        Debug.Log("Przyznano nagrodę.");
+        Debug.Log("Zadanie wykonane. Przyznano nagrodę");
+    
+           
+  
+       
     }
 }

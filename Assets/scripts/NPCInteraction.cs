@@ -3,6 +3,9 @@ using UnityEngine;
 public class NPCInteraction : MonoBehaviour
 {
    public Dialogue dialogue;
+   public Dialogue successDialogue;
+   public Dialogue needItemDialogue; 
+   public PlayerInventory playerInventory; 
 
    private bool playerInRange = false;
 
@@ -10,8 +13,16 @@ public class NPCInteraction : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
-            dialogue.gameObject.SetActive(true);
-            dialogue.StartDialogue();
+            if (playerInventory.HasItem())
+            {
+                successDialogue.gameObject.SetActive(true);
+                successDialogue.StartDialogue();
+            }
+            else
+            {
+                needItemDialogue.gameObject.SetActive(true);
+                needItemDialogue.StartDialogue();
+            }
         }
     }
 

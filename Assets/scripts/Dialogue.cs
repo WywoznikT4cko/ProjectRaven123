@@ -41,8 +41,7 @@ public class Dialogue : MonoBehaviour
     private bool dialogueActive = false;
     void Update()
     {
-        if (!dialogueActive)
-            EndDialogue();
+        
             
         if(Input.GetMouseButtonDown(0))
         {
@@ -81,23 +80,16 @@ public class Dialogue : MonoBehaviour
         else
         {
             dialogueActive = false;
-        }
-
-    }
-
-    public void EndDialogue()
-    {
-        if (dialogueActive == false)
-        {
+            
+            
             reward.GiveReward();
             dEnded = true;
             gameObject.SetActive(false);
-
-
-            return;
-
         }
+
     }
+
+
 
 
 }

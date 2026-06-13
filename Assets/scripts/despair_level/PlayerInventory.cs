@@ -10,4 +10,17 @@ public class PlayerInventory : MonoBehaviour
 
         Debug.Log("Otrzymano przedmiot. Łącznie: " + itemCount);
     }
+
+    public bool HasItem()
+    {
+        return itemCount > 0;
+    }
+
+    public void RemoveItem()
+    {
+        if (itemCount > 0)
+        {
+            itemCount--;
+        }
+    }
 }
