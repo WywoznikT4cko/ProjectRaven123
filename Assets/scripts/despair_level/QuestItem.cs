@@ -5,9 +5,11 @@ public class QuestItem : MonoBehaviour
     [SerializeField] private ItemType itemType;
     [SerializeField] private PlayerInventory playerInventory;
 
-    private void OnTriggerEnter(Collider other)
+    private bool playerInRange  = false; 
+
+    private void Update()
     {
-        if(other.CompareTag("Player"))
+        if (playerInRange && Input.GetKeyDown(KeyCode.B))
         {
             playerInventory.AddItem(itemType);
             Destroy(gameObject);
@@ -16,11 +18,18 @@ public class QuestItem : MonoBehaviour
 
 
 
-
-
-
-
-
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            playerInRange = true;
+        }
+    }
+     private void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            playerInRange = false;
+        }
+    }
 }
-

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NPCInteraction : MonoBehaviour
+public class NPCInteractionClass : MonoBehaviour
 {
    public Dialogue successDialogue;
    public Dialogue needItemDialogue; 

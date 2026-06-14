@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class NPCInteraction : MonoBehaviour
 {
-   public Dialogue dialogue;
    public Dialogue successDialogue;
    public Dialogue needItemDialogue; 
-   public PlayerInventory playerInventory; 
+   [SerializeField] private ItemType requiredItem; 
+   [SerializeField] private PlayerInventory playerInventory; 
+
+ 
 
    private bool playerInRange = false;
 
@@ -13,7 +15,7 @@ public class NPCInteraction : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
-            if (playerInventory.HasItem())
+            if (playerInventory.HasItem(requiredItem))
             {
                 successDialogue.gameObject.SetActive(true);
                 successDialogue.StartDialogue();
@@ -25,7 +27,6 @@ public class NPCInteraction : MonoBehaviour
             }
         }
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
