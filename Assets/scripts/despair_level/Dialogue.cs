@@ -78,9 +78,14 @@ public class Dialogue : MonoBehaviour
             dialogueActive = false;
             gameObject.SetActive(false);
             reward.GiveReward();
+            
+            
         }
 
     }
+
+
+
 
 
 }

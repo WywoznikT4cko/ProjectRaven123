@@ -11,13 +11,15 @@ public class DialogueReward : MonoBehaviour
     {
         if (rewardGiven)
             return;
+        
+        playerInventory.RemoveItem(); // gracz oddaje przedmiot NPC
 
-        playerInventory.AddItem();
-
+        
+        
         redScreenEffect.IncreaseRedness();
 
-        rewardGiven = true;
+        rewardGiven = true; 
 
-        Debug.Log("Przyznano nagrodę.");
+        Debug.Log("Zadanie wykonane. Przyznano nagrodę");
     }
 }

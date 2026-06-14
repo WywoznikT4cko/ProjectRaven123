@@ -2,12 +2,22 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public int itemCount = 0;
+    public ItemType currentItem = ItemType.None;
 
-    public void AddItem()
+    public void AddItem(ItemType item)
     {
-        itemCount++;
+        currentItem = item;
 
-        Debug.Log("Otrzymano przedmiot. Łącznie: " + itemCount);
+        Debug.Log("Podniesiono" + item);
+    }
+
+    public bool HasItem(ItemType item)
+    {
+        return currentItem == item;
+    }
+
+    public void RemoveItem()
+    {
+        currentItem = ItemType.None; 
     }
 }
