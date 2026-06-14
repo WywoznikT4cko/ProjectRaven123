@@ -12,8 +12,6 @@ public class NPCQuest : MonoBehaviour
 
             Debug.Log("NPC otrzymał przedmiot!");
 
-            // Tutaj możesz uruchomić nowy dialog
-            // albo zakończyć zadanie.
         }
         else
         {
