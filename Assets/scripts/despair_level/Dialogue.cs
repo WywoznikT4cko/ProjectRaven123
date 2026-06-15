@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 
 public class Dialogue : MonoBehaviour
@@ -48,6 +49,7 @@ public class Dialogue : MonoBehaviour
             if (textComponent.text == lines[index])
             {
                 NextLine();
+                AudioManager.Instance.Play(AudioManager.SoundType.Raven);
             }
             else
             {

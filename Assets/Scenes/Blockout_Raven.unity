@@ -1848,6 +1848,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f593bc20677ebf14abd27a4853408c68, type: 3}
+--- !u!1 &118791208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 118791210}
+  - component: {fileID: 118791209}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &118791209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118791208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a693fccc5724b1479840bc159e58a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RedScreenEffect
+  redOverlay: {fileID: 1655953413}
+  alphaIncrease: 0.1
+--- !u!4 &118791210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118791208}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.45247, y: 0, z: -5.2532}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &119655929 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5925433674301824424, guid: f593bc20677ebf14abd27a4853408c68, type: 3}
@@ -2358,7 +2404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a81f940213dcc0542878ce7ad72c1dac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.079
+      value: -0.034
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a81f940213dcc0542878ce7ad72c1dac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2399,7 +2445,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: a81f940213dcc0542878ce7ad72c1dac, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: d131ac28004a7824fb5a9025f004e9f6, type: 2}
+      objectReference: {fileID: 2100000, guid: ac159f8847cd1534fac2cad20998ecd2, type: 2}
     - target: {fileID: -7511558181221131132, guid: a81f940213dcc0542878ce7ad72c1dac, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -2459,7 +2505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673ccc16db638bd4fb9e7881052c9c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueCanvas: {fileID: 172623431}
   textComponent: {fileID: 183906764}
   lines:
   - "Kruk Dawian:  ...Teraz pami\u0119tam to wyra\u017Aniej. By\u0142a kwiaciark\u0105."
@@ -2473,10 +2518,10 @@ MonoBehaviour:
     doprowadzi\u0142a mnie do ruiny. "
   - "Kruk Dawian: Wr\xF3ci\u0142em po jednej z bitew... Jedyne, co po niej pozosta\u0142o,
     to zakrwawione kwiaty, kt\xF3rymi kiedy\u015B si\u0119 opiekowa\u0142a."
-  textSpeed: 10
+  textSpeed: 0.02
   index: 0
   dialogueEnded: 1
-  reward: {fileID: 0}
+  reward: {fileID: 1871929316}
   dEnded: 1
 --- !u!114 &172623433
 MonoBehaviour:
@@ -2671,8 +2716,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+    rgba: 4294111999
+  m_fontColor: {r: 1, g: 0.94905657, b: 0.94905657, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2758,8 +2803,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -40, y: -40}
+  m_AnchoredPosition: {x: 0, y: -5}
+  m_SizeDelta: {x: -180, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &190472365
 PrefabInstance:
@@ -4503,7 +4548,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4589,8 +4634,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -40, y: -40}
+  m_AnchoredPosition: {x: 0, y: -5}
+  m_SizeDelta: {x: -180, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &268526802 stripped
 Transform:
@@ -5052,7 +5097,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_fontColor: {r: 1, g: 0.95660377, b: 0.95660377, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5138,8 +5183,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -40, y: -40}
+  m_AnchoredPosition: {x: 0, y: -5}
+  m_SizeDelta: {x: -180, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &299049633 stripped
 Transform:
@@ -5402,7 +5447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673ccc16db638bd4fb9e7881052c9c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueCanvas: {fileID: 312906796}
   textComponent: {fileID: 986202255}
   lines:
   - "Kruk Dawian: Czy ty\u2026 te\u017C jeste\u015B \u017Co\u0142nierzem? "
@@ -5425,10 +5469,10 @@ MonoBehaviour:
   - "Kruk Dawian:  Ona... chyba lubi\u0142a kwiaty? Nie... nie pami\u0119tam. Kruk1:
     Kiedy\u015B wiedzia\u0142em o niej wszystko. Teraz... Wszystko jest rozmyte.
     Nie potrafi\u0119 sobie przypomnie\u0107 \u017Cadnej z ich twarzy...  "
-  textSpeed: 10
+  textSpeed: 0.02
   index: 0
   dialogueEnded: 0
-  reward: {fileID: 0}
+  reward: {fileID: 1871929316}
   dEnded: 0
 --- !u!4 &317512624 stripped
 Transform:
@@ -6853,7 +6897,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673ccc16db638bd4fb9e7881052c9c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueCanvas: {fileID: 0}
   textComponent: {fileID: 267238072}
   lines:
   - "Miro: Czy ty... te\u017C jeste\u015B \u017Co\u0142nierzem?  "
@@ -6888,10 +6931,10 @@ MonoBehaviour:
   - "Miro: ... Jej zdj\u0119cie. Odk\u0105d odesz\u0142a zawsze mia\u0142em przy
     sobie jej zdj\u0119cie.  "
   - "Miro: Chcia\u0142bym, \u017Ceby tu by\u0142a... "
-  textSpeed: 10
+  textSpeed: 0.02
   index: 0
   dialogueEnded: 0
-  reward: {fileID: 0}
+  reward: {fileID: 1871929316}
   dEnded: 0
 --- !u!114 &402737668
 MonoBehaviour:
@@ -10990,7 +11033,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f6dcc3705b067f147b69c5faacc64421, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11953,7 +11996,11 @@ MonoBehaviour:
   AllSounds:
   - Type: 1
     Clip: {fileID: 8300000, guid: 8533ed39e46a9ad45aec38dc447d2a93, type: 3}
-    Volume: 0.06
+    Volume: 1
+    Source: {fileID: 0}
+  - Type: 0
+    Clip: {fileID: 8300000, guid: 80167161bac2ca241868d6a6b8a508f1, type: 3}
+    Volume: 1
     Source: {fileID: 0}
 --- !u!4 &727108916
 Transform:
@@ -15625,7 +15672,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f6dcc3705b067f147b69c5faacc64421, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16507,8 +16554,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -40, y: -40}
+  m_AnchoredPosition: {x: 0, y: -5}
+  m_SizeDelta: {x: -180, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &986202255
 MonoBehaviour:
@@ -16539,8 +16586,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+    rgba: 4294506751
+  m_fontColor: {r: 1, g: 0.9716981, b: 0.9716981, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -17064,7 +17111,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -17150,8 +17197,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -40, y: -40}
+  m_AnchoredPosition: {x: 0, y: -5}
+  m_SizeDelta: {x: -180, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1017090406 stripped
 Transform:
@@ -18813,7 +18860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673ccc16db638bd4fb9e7881052c9c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueCanvas: {fileID: 0}
   textComponent: {fileID: 1006687451}
   lines:
   - "Bezimienny: Mam nadziej\u0119, \u017Ce to pomo\u017Ce Ci przesta\u0107 si\u0119
@@ -18821,10 +18867,10 @@ MonoBehaviour:
   - "Miro: Ty naprawd\u0119 j\u0105 znalaz\u0142e\u015B? Nie wiem jak Ci dzi\u0119kowa\u0107... "
   - "Miro:  My\u015Bla\u0142em, \u017Ce ju\u017C nigdy jej nie zobacz\u0119. Oby\u015B
     si\u0119 st\u0105d wydosta\u0142. Powodzenia. "
-  textSpeed: 10
+  textSpeed: 0.02
   index: 0
   dialogueEnded: 0
-  reward: {fileID: 0}
+  reward: {fileID: 1871929316}
   dEnded: 0
 --- !u!114 &1148870719
 MonoBehaviour:
@@ -19025,7 +19071,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f6dcc3705b067f147b69c5faacc64421, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19541,7 +19587,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -19627,8 +19673,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -40, y: -40}
+  m_AnchoredPosition: {x: 0, y: -5}
+  m_SizeDelta: {x: -180, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1171129934
 PrefabInstance:
@@ -22272,7 +22318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f6dcc3705b067f147b69c5faacc64421, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23297,11 +23343,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1632400500797467239, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       insertIndex: 4
       addedObject: {fileID: 1427133627}
+    - targetCorrespondingSourceObject: {fileID: 6513916827115202091, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1655953415}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
 --- !u!4 &1373153107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1632400500797467239, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+  m_PrefabInstance: {fileID: 1373153106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1373153108 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6513916827115202091, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
   m_PrefabInstance: {fileID: 1373153106}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1374456532 stripped
@@ -24399,7 +24453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673ccc16db638bd4fb9e7881052c9c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueCanvas: {fileID: 0}
   textComponent: {fileID: 298497027}
   lines:
   - "Maril: Czy ty\u2026 te\u017C jeste\u015B \u017Co\u0142nierzem?  "
@@ -24416,10 +24469,10 @@ MonoBehaviour:
   - "Maril: Mia\u0142em zawsze jedn\u0105 i t\u0105 sam\u0105 zapalniczk\u0119 od
     dziecka, nosi\u0142em j\u0105 zawsze przy sobie. Kiedy\u015B by\u0142a \u0142adna
     i czerwona, ale za du\u017Co prze\u017Cy\u0142a... "
-  textSpeed: 1
+  textSpeed: 0.02
   index: 0
   dialogueEnded: 0
-  reward: {fileID: 0}
+  reward: {fileID: 1871929316}
   dEnded: 0
 --- !u!114 &1462428385
 MonoBehaviour:
@@ -24673,7 +24726,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673ccc16db638bd4fb9e7881052c9c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueCanvas: {fileID: 0}
   textComponent: {fileID: 1168930297}
   lines:
   - "Maril: Huh? Znalaz\u0142e\u015B moj\u0105 zapalniczk\u0119?  "
@@ -24681,10 +24733,10 @@ MonoBehaviour:
   - "Maril:Ale... dzi\u0119kuj\u0119... "
   - "Maril:To chyba jedyna dobra rzecz od bardzo dawna jaka mi si\u0119 przytrafi\u0142a...
     Nie wiem czy to wystarczy, ale... to jaki\u015B pocz\u0105tek. "
-  textSpeed: 10
+  textSpeed: 0.02
   index: 0
   dialogueEnded: 0
-  reward: {fileID: 0}
+  reward: {fileID: 1871929316}
   dEnded: 0
 --- !u!114 &1475306591
 MonoBehaviour:
@@ -28724,6 +28776,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 18ca7302b0d2abe41a96ddf175d629aa, type: 3}
   m_PrefabInstance: {fileID: 1655408445}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1655953412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1655953415}
+  - component: {fileID: 1655953414}
+  - component: {fileID: 1655953413}
+  m_Layer: 5
+  m_Name: redOverlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1655953413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655953412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1655953414
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655953412}
+  m_CullTransparentMesh: 1
+--- !u!224 &1655953415
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655953412}
+  m_LocalRotation: {x: -0, y: 0.000000015805067, z: 0.000000015805067, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2316.169}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1373153108}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 56855.91, y: -43667.688}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1656764692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4052485905831964581, guid: 8cf2966042f7c2f44ac97cda7cc59eff, type: 3}
@@ -31488,7 +31615,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f6dcc3705b067f147b69c5faacc64421, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -37679,7 +37806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f6dcc3705b067f147b69c5faacc64421, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -38158,3 +38285,4 @@ SceneRoots:
   - {fileID: 1495148563}
   - {fileID: 1750554176}
   - {fileID: 170097030}
+  - {fileID: 118791210}
