@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
-    [SerializeField] private GameObject dialogueCanvas;
+    
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed; 
@@ -85,7 +85,9 @@ public class Dialogue : MonoBehaviour
             reward.GiveReward();
             dEnded = true; 
             gameObject.SetActive(false);
-            dialogueCanvas.SetActive(false);
+
+            Debug.Log("KoniecDialogi");
+            
         }
 
     }
